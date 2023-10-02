@@ -24,6 +24,12 @@ If you learnt something new, please consider **tipping** at my Ko-fi!
 
 [![Ko-Fi Tip Jar](https://i.imgur.com/5CmP1jo.png)](https://ko-fi.com/weetile)
 
+## Royal Holloway Quick Links
+- [Campus Connect](https://campus-connect.royalholloway.ac.uk/) 💡
+- [Moodle](https://moodle.royalholloway.ac.uk/) 📚
+- [Mail](https://outlook.office365.com/mail/) 📧
+- [Timetable](https://webtimetables.royalholloway.ac.uk/SWS/SDB2324SWS/default.aspx) 📅 
+- [Attendance](https://generalssb-prod.ec.royalholloway.ac.uk/BannerExtensibility/customPage/page/RHUL_Attendance_Student) ⏱️
 ## Linux CIM Tips and Tricks
 ### Creating an SSH alias  
 You can easily create an SSH alias to make it **easier** and **more convenient** to connect to the Linux servers. 
