@@ -63,3 +63,11 @@ To add new fonts, for example for use on Visual Studio Code or Eclipse, you'll n
 fc-cache -f -v
 ```
 Restart the application and you should be good to go!
+### Accessing the filesystem through Dolphin
+You can access the Linux CIM server in Dolphin by using the `fish` server. To test this, access this protocol in Dolphin, replacing USERNAME with your username (e.g: ZLAT262):
+```
+fish://USERNAME@linux.cim.rhul.ac.uk:22
+```
+You can add this as a remote directory in your Dolphin places panel by right clicking on Remote, pressing Add Entry and adding as such:
+
+![image](https://github.com/Weetile/weetile-compsci-rhul-resources/assets/7700383/ceada147-cb78-4d14-b7d6-af8dcbb32c70)
