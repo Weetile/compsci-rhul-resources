@@ -6,13 +6,14 @@ If you learnt something new, please consider tipping at my Ko-fi!
 ## Linux CIM
 ### SSH Alias
 You can easily create an SSH alias to make it **easier** and **more convenient** to connect to the Linux servers. 
+
 👎 Normally, you'd authenticate to the Linux servers as such: 
 
     ssh USERNAME@linux.cim.rhul.ac.uk
 👍🌟    By creating an SSH alias, all you have to type in is this: 
 
     ssh rhul
-   To do this, you'll need to modify your ssh config. (`~/./ssh/config`)  Make sure to create it doesn't exist, then append the following to the file, replacing USERNAME with your RHUL username (e.g: ZLAT262 or similar)
+   To do this, you'll need to modify your ssh config. (`~/./ssh/config`)  Make sure to create the file if it doesn't exist, then append the following to the file, replacing USERNAME with your RHUL username (e.g: ZLAT262 or similar)
 ```
 Host rhul  
     User zlac218  
