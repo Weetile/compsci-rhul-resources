@@ -1,9 +1,12 @@
 
 # Weetile's RHUL resources
 
-Reminder -- you can access the **Table of Contents** to easily skip to a specific section!
+<p align="center">
+<img src="https://github.com/Weetile/weetile-compsci-rhul-resources/assets/7700383/1a4bbada-60c3-47f8-8fd7-ac4bd1517cdd">
+</p>
 
-![image](https://github.com/Weetile/weetile-compsci-rhul-resources/assets/7700383/b7dbfd71-d7a1-4a74-90fb-3e40ff8fa0e3)
+
+Reminder -- you can access the **Table of Contents** to easily skip to a specific section!
 
 If you learnt something new, please consider **tipping** at my Ko-fi!
 
