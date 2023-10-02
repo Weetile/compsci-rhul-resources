@@ -70,4 +70,4 @@ fish://USERNAME@linux.cim.rhul.ac.uk:22
 ```
 You can add this as a remote directory in your Dolphin places panel by right clicking on Remote, pressing Add Entry and adding as such:
 
-![image](https://github.com/Weetile/weetile-compsci-rhul-resources/assets/7700383/ceada147-cb78-4d14-b7d6-af8dcbb32c70)
+![image](https://github.com/Weetile/weetile-compsci-rhul-resources/assets/7700383/d939d76c-e4e0-48fd-a716-f9236ae99a9d)
