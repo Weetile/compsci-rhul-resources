@@ -1,10 +1,11 @@
 # Weetile's RHUL resources
 
 If you learnt something new, please consider tipping at my Ko-fi!
+
 [![Ko-Fi Tip Jar](https://i.imgur.com/5CmP1jo.png)](https://ko-fi.com/weetile)
 
 ## Linux CIM
-### SSH Alias
+### Creating an SSH alias  
 You can easily create an SSH alias to make it **easier** and **more convenient** to connect to the Linux servers. 
 
 👎 Normally, you'd authenticate to the Linux servers as such: 
@@ -22,7 +23,7 @@ Host rhul
 That's it! You can now  access the Linux server by just typing in `ssh rhul` ✨
 Want to be able to login without typing in your password everytime? See the next section 😜
 
-### SSH Authentication
+### Using SSH authentication for security and speed
 Using SSH public key authentication is more secure and more importantly -- means you don't have to type in your password everytime you authenticate to the CIM servers! 
 To generate a new SSH keypair, you can run the following command on Linux:
 `
@@ -72,3 +73,22 @@ fish://USERNAME@linux.cim.rhul.ac.uk:22
 You can add this as a remote directory in your Dolphin places panel by right clicking on Remote, pressing Add Entry and adding as such:
 
 ![image](https://github.com/Weetile/weetile-compsci-rhul-resources/assets/7700383/d939d76c-e4e0-48fd-a716-f9236ae99a9d)
+## Command-line utilities
+### gcc flags alias
+In CS2850: Operating Systems, you are instructed to use the following flags when compiling C code using `gcc`:
+```
+-Wall -Werror -Wpedantic
+```
+
+- **-Wall**: This flag enables most of the commonly used warning messages. It stands for "all warnings." When you use this flag, the compiler will warn you about potential issues and non-standard code constructs. It helps you write more reliable and portable code by pointing out possible problems in your source code.
+
+- **-Werror**: This flag treats all warning messages as errors. When you compile your code with this flag, any warning issued by the compiler will be treated as an error, and compilation will fail. Programmers often use this flag to ensure that the codebase remains free of warnings, making it easier to maintain and reducing the likelihood of hidden bugs.
+
+- **-Wpedantic**: This flag generates warnings about code that doesn't follow the standard strictly. It helps in writing code that is more compliant with the language standard. It catches non-standard usages and enforces stricter adherence to the language specifications, ensuring better portability across different compilers and platforms.
+
+To avoid having to type these out manually or copy-paste everytime, we can create an alias in our shell. For example we can define `rhulgcc` to include these flags automatically:
+
+```
+alias rhulgcc='gcc -Wall -Werror -Wpedantic
+```
+If you enter this command, `rhulgcc` will be aliased until the shell has terminated. To make these changes persistent, we can modify the `~/.bashrc` file (or `~/.zshrc`) if applicable by appending that alias command to the bottom. Remember to restart the shell for these changes to take effect.
