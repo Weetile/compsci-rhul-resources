@@ -89,6 +89,6 @@ In CS2850: Operating Systems, you are instructed to use the following flags when
 To avoid having to type these out manually or copy-paste everytime, we can create an alias in our shell. For example we can define `rhulgcc` to include these flags automatically:
 
 ```
-alias rhulgcc='gcc -Wall -Werror -Wpedantic
+alias rhulgcc='gcc -Wall -Werror -Wpedantic'
 ```
 If you enter this command, `rhulgcc` will be aliased until the shell has terminated. To make these changes persistent, we can modify the `~/.bashrc` file (or `~/.zshrc`) if applicable by appending that alias command to the bottom. Remember to restart the shell for these changes to take effect.
