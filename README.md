@@ -117,9 +117,9 @@ export SHELL=/bin/zsh
 exec /bin/zsh -l
 ```
 ### Adding new fonts on NoMachine
-To add new fonts, for example for use on Visual Studio Code or Eclipse, you'll need to add the font (.ttf or .otf) to your `~/.local/share/fonts` directory. Then, run this command to refresh your font cache:
+To add new fonts, for example for use on Visual Studio Code or Eclipse, you'll need to add the font (.ttf or .otf) to your `~/.local/share/fonts` directory. You can use the `fc-cache` command to scan the font directories on the system and build font information cache files for applications using `fontconfig` for their font handling. Thus, run this command:
 ```
-fc-cache -f -v
+fc-cache -fv
 ```
 Restart the application and you should be good to go!
 ### Accessing the filesystem through Dolphin
