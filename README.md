@@ -30,6 +30,7 @@ If you learnt something new, please consider **tipping** at my Ko-fi!
 - [Mail](https://outlook.office365.com/mail/) 📧
 - [Timetable](https://webtimetables.royalholloway.ac.uk/SWS/SDB2324SWS/default.aspx) 📅 
 - [Attendance](https://generalssb-prod.ec.royalholloway.ac.uk/BannerExtensibility/customPage/page/RHUL_Attendance_Student) ⏱️
+- [Piazza](https://piazza.com/) 📰
 ## Linux CIM Tips and Tricks
 ### Creating an SSH alias  
 You can easily create an SSH alias to make it **easier** and **more convenient** to connect to the Linux servers. 
