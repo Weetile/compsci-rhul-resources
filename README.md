@@ -1,4 +1,8 @@
 # Weetile's RHUL resources
+
+If you learnt something new, please consider tipping at my Ko-fi!
+[![Ko-Fi Tip Jar](https://i.imgur.com/5CmP1jo.png)](https://ko-fi.com/weetile)
+
 ## Linux CIM
 ### SSH Alias
 You can easily create an SSH alias to make it **easier** and **more convenient** to connect to the Linux servers. 
