@@ -115,7 +115,7 @@ You can add this as a remote directory in your Dolphin places panel by right cli
 ## Command-line utilities
 ### gcc flags alias
 
-![gccflags](https://github.com/Weetile/weetile-compsci-rhul-resources/assets/7700383/237cf2bf-b578-4507-8ac7-30e209b25481)
+![gccflags](https://github.com/Weetile/weetile-compsci-rhul-resources/assets/7700383/7e6df802-9bf2-4da6-9b77-d29690257780)
 
 
 In CS2850: Operating Systems, you are instructed to use the following flags when compiling C code using `gcc`:
