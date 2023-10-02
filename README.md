@@ -1,10 +1,22 @@
 
 # Weetile's RHUL resources
 
-<p align="center">
-<img src="https://github.com/Weetile/weetile-compsci-rhul-resources/assets/7700383/1a4bbada-60c3-47f8-8fd7-ac4bd1517cdd">
-</p>
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="[https://github.com/othneildrew/Best-README-Template](https://github.com/Weetile/weetile-compsci-rhul-resources)">
+    <img src="https://github.com/Weetile/weetile-compsci-rhul-resources/assets/7700383/1a4bbada-60c3-47f8-8fd7-ac4bd1517cdd">
+  </a>
 
+  <h3 align="center">Weetile's Computer Science RHUL Resources</h3>
+
+  <p align="center">
+    Some tips and tricks to make your degree just a bit easier! ✨<br />
+    Contact me to add any suggestions: <a href="mailto:otto.hg@outlook.com">otto.hg@outlook.com</a>
+  </p>
+</div>
+
+---
 
 Reminder -- you can access the **Table of Contents** to easily skip to a specific section!
 
