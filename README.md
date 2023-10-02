@@ -1,29 +1,41 @@
+
 # Weetile's RHUL resources
 
-If you learnt something new, please consider tipping at my Ko-fi!
+Reminder -- you can access the **Table of Contents** to easily skip to a specific section!
+
+![image](https://github.com/Weetile/weetile-compsci-rhul-resources/assets/7700383/b7dbfd71-d7a1-4a74-90fb-3e40ff8fa0e3)
+
+If you learnt something new, please consider **tipping** at my Ko-fi!
 
 [![Ko-Fi Tip Jar](https://i.imgur.com/5CmP1jo.png)](https://ko-fi.com/weetile)
 
-## Linux CIM
+## Linux CIM Tips and Tricks
 ### Creating an SSH alias  
 You can easily create an SSH alias to make it **easier** and **more convenient** to connect to the Linux servers. 
 
-👎 Normally, you'd authenticate to the Linux servers as such: 
+👎😱 Normally, you'd authenticate to the Linux servers by specifying the username and host address: 
 
     ssh USERNAME@linux.cim.rhul.ac.uk
-👍🌟    By creating an SSH alias, all you have to type in is this: 
+👍🌟    By creating an SSH alias, you can omit the username and host address as such: 
 
     ssh rhul
-   To do this, you'll need to modify your ssh config. (`~/./ssh/config`)  Make sure to create the file if it doesn't exist, then append the following to the file, replacing USERNAME with your RHUL username (e.g: ZLAT262 or similar)
+   To do this, you'll need to modify your ssh config. This can be found at `~/./ssh/config`.
+   
+   Make sure to **create the file if it doesn't exist**, then **append the following** to the file, replacing USERNAME with your RHUL username (e.g: ZLAT262 or similar)
 ```
 Host rhul  
     User zlac218  
     HostName linux.cim.rhul.ac.uk
 ```
-That's it! You can now  access the Linux server by just typing in `ssh rhul` ✨
+**That's it**! You can now  access the Linux server by just typing in `ssh rhul` ✨
+
 Want to be able to login without typing in your password everytime? See the next section 😜
 
 ### Using SSH authentication for security and speed
+
+![image](https://github.com/Weetile/weetile-compsci-rhul-resources/assets/7700383/15b130cd-bd55-470b-95e7-74b76a7bdd0d)
+
+
 Using SSH public key authentication is more secure and more importantly -- means you don't have to type in your password everytime you authenticate to the CIM servers! 
 To generate a new SSH keypair, you can run the following command on Linux:
 `
@@ -34,11 +46,15 @@ Once you have your keypair saved, you can upload it to the Linux servers using t
     ssh-copy-id USERNAME@linux.cim.rhul.ac.uk
 You can confirm the SSH key has been added by authenticating to the server. If it doesn't ask you for your password, it's all set!
 ### Accessing Linux server off-campus in the evening
+
+![image](https://github.com/Weetile/weetile-compsci-rhul-resources/assets/7700383/b953bf4b-b5ca-4655-bbd7-8f901ae5e31e)
+
+
 The RHUL Linux machines **aren't able to be accessed off-campus in the evening** due to security reasons. To circumvent this, you can **connect to the RHUL VPN** by following [this guide](https://intranet.royalholloway.ac.uk/students/help-support/it-services/access-off-campus/vpn/vpn.aspx). The following information in this section is copied verbatim from that guide.  
 
-On **Linux**, download and install [this file](http://intranet.royalholloway.ac.uk/it/programs/pangplinux-5.2.4-c14.tgz) to connect to the VPN.
+- On **Linux**, download and install [this file](http://intranet.royalholloway.ac.uk/it/programs/pangplinux-5.2.4-c14.tgz) to connect to the VPN.
 
-On **Windows**, follow these instructions to download and install the VPN:
+- On **Windows**, follow these instructions to download and install the VPN:
 
 1.  Open your web browser and visit [https://student-vpn.royalholloway.ac.uk](https://student-vpn.royalholloway.ac.uk/). Please note that you must use 'royalholloway' and not 'rhul'
 2.  Log in using your university username and password
@@ -66,7 +82,7 @@ fc-cache -f -v
 ```
 Restart the application and you should be good to go!
 ### Accessing the filesystem through Dolphin
-You can access the Linux CIM server in Dolphin by using the `fish` server. To test this, access this protocol in Dolphin, replacing USERNAME with your username (e.g: ZLAT262):
+The `fish` protocol allows you to access the filesystem of the Linux CIM server in Dolphin remotely. Navigate to this location in Dolphin, replacing USERNAME with your username (e.g: ZLAT262):
 ```
 fish://USERNAME@linux.cim.rhul.ac.uk:22
 ```
@@ -92,3 +108,12 @@ To avoid having to type these out manually or copy-paste everytime, we can creat
 alias rhulgcc='gcc -Wall -Werror -Wpedantic'
 ```
 If you enter this command, `rhulgcc` will be aliased until the shell has terminated. To make these changes persistent, we can modify the `~/.bashrc` file (or `~/.zshrc`) if applicable by appending that alias command to the bottom. Remember to restart the shell for these changes to take effect.
+
+The `-o` flag allows you to specify the name of the output file, by default it will be `a.out`.
+
+```
+gcc filename.c -o outputfile
+```
+
+Note that these flags will also work for compiling C++ code using `g++`.
+
