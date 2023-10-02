@@ -28,4 +28,34 @@ Once you have your keypair saved, you can upload it to the Linux servers using t
     ssh-copy-id USERNAME@linux.cim.rhul.ac.uk
 You can confirm the SSH key has been added by authenticating to the server. If it doesn't ask you for your password, it's all set!
 ### Accessing Linux server off-campus in the evening
-The RHUL Linux machines aren't able to be accessed off-campus in the evening due to security reasons. To circumvent this, you can connect to the RHUL VPN by following [this guide](https://intranet.royalholloway.ac.uk/students/help-support/it-services/access-off-campus/vpn/vpn.aspx).
+The RHUL Linux machines **aren't able to be accessed off-campus in the evening** due to security reasons. To circumvent this, you can **connect to the RHUL VPN** by following [this guide](https://intranet.royalholloway.ac.uk/students/help-support/it-services/access-off-campus/vpn/vpn.aspx). The following information in this section is copied verbatim from that guide.  
+
+On **Linux**, download and install [this file](http://intranet.royalholloway.ac.uk/it/programs/pangplinux-5.2.4-c14.tgz) to connect to the VPN.
+
+On **Windows**, follow these instructions to download and install the VPN:
+
+1.  Open your web browser and visit [https://student-vpn.royalholloway.ac.uk](https://student-vpn.royalholloway.ac.uk/). Please note that you must use 'royalholloway' and not 'rhul'
+2.  Log in using your university username and password
+3.  Download and open the installer for your operating system
+4.  You will be guided through the process to install GlobalProtect. Leave all of the options as the default and complete the process with the installer wizard
+5.  Once GlobalProtect has been installed open the app
+6.  The app will ask you for a _Portal address._ Enter _student-vpn.royalholloway.ac.uk_ in the box and press _Connect_
+7.  You will be prompted to log in. You will need to use your university email address (username@live.rhul.ac.uk format, e.g. abcd123@live.rhul.ac.uk) to access the university’s virtual private network (VPN). Enter these details, and press _Sign In_
+8.  [Follow the instructions here to sign in with MFA.](https://intranet.royalholloway.ac.uk/students/help-support/it-services/multi-factor-authentication.aspx)
+
+### Change resolution and display settings on NoMachine
+
+    xfce4-display-settings
+### Change default shell on the terminal
+On most Linux systems including the CIM servers, `bash` is used as the default shell. Normally you'd use the `chsh` command to do this, however this is locked down by CIM for security reasons.
+You can bypass this by modifying your `~/.profile` then relogging in. For example to change the default shell to `zsh`:
+```
+export SHELL=/bin/zsh  
+exec /bin/zsh -l
+```
+### Adding new fonts on NoMachine
+To add new fonts, for example for use on Visual Studio Code or Eclipse, you'll need to add the font (.ttf or .otf) to your `~/.local/share/fonts` directory. Then, run this command to refresh your font cache:
+```
+fc-cache -f -v
+```
+Restart the application and you should be good to go!
