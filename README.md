@@ -68,14 +68,32 @@ Once you have your keypair saved, you can upload it to the Linux servers using t
 
     ssh-copy-id USERNAME@linux.cim.rhul.ac.uk
 You can confirm the SSH key has been added by authenticating to the server. If it doesn't ask you for your password, it's all set!
-### Accessing Linux server off-campus in the evening
+### Setting up Royal Holloway VPN (allowing access to Linux server off-campus in the evening)
 
 ![image](https://github.com/Weetile/weetile-compsci-rhul-resources/assets/7700383/b953bf4b-b5ca-4655-bbd7-8f901ae5e31e)
 
 
-The RHUL Linux machines **aren't able to be accessed off-campus in the evening** due to security reasons. To circumvent this, you can **connect to the RHUL VPN** by following [this guide](https://intranet.royalholloway.ac.uk/students/help-support/it-services/access-off-campus/vpn/vpn.aspx). The following information in this section is copied verbatim from that guide.  
+The RHUL Linux machines **aren't able to be accessed off-campus in the evening** due to security reasons. To circumvent this, you can **connect to the RHUL VPN** by following [this guide](https://intranet.royalholloway.ac.uk/students/help-support/it-services/access-off-campus/vpn/vpn.aspx). This allows off-campus users to routing your network traffic through the campus, giving you a Royal Holloway network address, behaving exactly like it would if you were on campus and this allowing you quick access to restricted services, like library services, your Y: drive and evening access to the Linux servers.  
 
-- On **Linux**, download and install [this file](http://intranet.royalholloway.ac.uk/it/programs/pangplinux-5.2.4-c14.tgz) to connect to the VPN.
+- On **Linux**, Royal Holloway officially recommends using the GlobalProtect app on Linux to connect to their VPN, found on [this page](https://intranet.royalholloway.ac.uk/students/help-support/it-services/access-off-campus/vpn/vpn.aspx).
+
+  **That being said,** I would strongly encourage using the free and open source utility [GlobalProtect-openconnect](https://github.com/yuezk/GlobalProtect-openconnect) to connect instead. It is avaliable as an official package on all major Linux distributions, maintains a persistent installation and is more convenient as it provides a graphical user interface.
+
+![image](https://github.com/Weetile/weetile-compsci-rhul-resources/assets/7700383/7a299138-02b5-428a-85a5-859285fa0bb7)
+
+  For Ubuntu and Mint, the installation instructions are as such:
+```
+sudo add-apt-repository ppa:yuezk/globalprotect-openconnect
+sudo apt-get update
+sudo apt-get install globalprotect-openconnect
+```
+For Arch Linux, simply install:
+```
+sudo pacman -S globalprotect-openconnect
+```
+
+After installed, run `gpclient` to start the UI then enter `student-vpn.royalholloway.ac.uk` as the portal address.
+  
 
 - On **Windows**, follow these instructions to download and install the VPN:
 
@@ -143,4 +161,3 @@ gcc filename.c -o outputfile
 ```
 
 Note that these flags will also work for compiling C++ code using `g++`.
-
