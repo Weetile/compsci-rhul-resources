@@ -106,6 +106,30 @@ After installed, run `gpclient` to start the UI then enter `student-vpn.royalhol
 7.  You will be prompted to log in. You will need to use your university email address (username@live.rhul.ac.uk format, e.g. abcd123@live.rhul.ac.uk) to access the university’s virtual private network (VPN). Enter these details, and press _Sign In_
 8.  [Follow the instructions here to sign in with MFA.](https://intranet.royalholloway.ac.uk/students/help-support/it-services/multi-factor-authentication.aspx)
 
+### Basic Linux Commands
+
+These are some basic Linux commands that are helpful to know.
+- `ls` (list) is used to list the contents of the current directory (folder)
+- `mkdir` (make directory) is used to create directories.
+    - e.g: `mkdir movies` will create a new directory `movies`
+- `cd` (change directory) is used to change the directory you are working in.
+- `pwd` (print working directory) will print the path of the current directory
+    - e.g: Output: `/home/cim/ug/username`
+- `mv` (move) is used to move files and folders between different directories.
+    - e.g: `mv shrek2.txt movies/` will move `shrek2.txt` into the directory `movies`
+- `rm` (remove) is used to delete files.
+    - e.g: `rm shrek2.txt` will remove the file `shrek2.txt`.
+
+### Editing files and writing code through the terminal
+
+To edit files through the terminal, you can use `nano`.
+By typing `nano main.py`, a new file with name `main.py` is created, and you can instantly start typing or editing code by navigating using arrow keys.
+Your changes won't be saved until you input `Ctrl+O` (write out/save) and hit enter, and you can use `Ctrl+X` (quit) to exit the program.
+
+To run your Python file after this, simply type `python3 main.py` and your code will output to the terminal.
+
+Alternatively, you can learn `vim` for a lot more power and efficiency, but there is a difficulty curve. You can access the 30 minute built-in Vim tutorial by typing in `vimtutor`.
+
 ### Change resolution and display settings on NoMachine
 
     xfce4-display-settings
