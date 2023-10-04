@@ -6,7 +6,7 @@
 # https://github.com/Weetile/weetile-compsci-rhul-resources
 
 # Define the options and corresponding links for Rofi
-options=("💡 Campus Connect" "📚 Moodle" "📧 Mail" "📅 Timetable" "⏱️  Attendance" "📰 Piazza" "🖥️ CIM GitLab Server")
+options=("💡 Campus Connect" "📚 Moodle" "📧 Mail" "📅 Timetable" "⏱️ Attendance" "📰 Piazza" "🖥️ CIM GitLab Server")
 links=("https://campus-connect.royalholloway.ac.uk/" 
        "https://moodle.royalholloway.ac.uk/"
        "https://outlook.office365.com/mail/"
