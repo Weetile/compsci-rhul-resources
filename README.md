@@ -89,7 +89,7 @@ sudo apt-get install globalprotect-openconnect
 ```
 For Arch Linux, simply install:
 ```
-sudo pacman -S globalprotect-openconnect
+sudo pacman -Sy globalprotect-openconnect
 ```
 
 After installed, run `gpclient` to start the UI then enter `student-vpn.royalholloway.ac.uk` as the portal address.
@@ -154,6 +154,14 @@ fish://USERNAME@linux.cim.rhul.ac.uk:22
 You can add this as a remote directory in your Dolphin places panel by right clicking on Remote, pressing Add Entry and adding as such:
 
 ![image](https://github.com/Weetile/weetile-compsci-rhul-resources/assets/7700383/d939d76c-e4e0-48fd-a716-f9236ae99a9d)
+
+## Installing Neovim on the Linux CIM Servers
+
+### One-command install
+```
+curl -sSL https://gist.github.com/Weetile/d208d9acae823ede5f2188a2695b3197/raw | sh
+```
+
 ## Command-line utilities
 ### gcc flags alias
 
