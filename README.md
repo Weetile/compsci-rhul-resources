@@ -1,4 +1,3 @@
-
 # Weetile's RHUL resources
 
 <!-- PROJECT LOGO -->
@@ -92,7 +91,7 @@ For Arch Linux, simply install:
 sudo pacman -Sy globalprotect-openconnect
 ```
 
-After installed, run `gpclient` to start the UI then enter `student-vpn.royalholloway.ac.uk` as the portal address.
+After installed, run `gpclient` to start the UI then enter `staff-vpn.royalholloway.ac.uk` as the portal address.
   
 
 - On **Windows**, follow these instructions to download and install the VPN:
