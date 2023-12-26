@@ -101,7 +101,7 @@ After installed, run `gpclient` to start the UI then enter `staff-vpn.royalhollo
 3.  Download and open the installer for your operating system
 4.  You will be guided through the process to install GlobalProtect. Leave all of the options as the default and complete the process with the installer wizard
 5.  Once GlobalProtect has been installed open the app
-6.  The app will ask you for a _Portal address._ Enter _student-vpn.royalholloway.ac.uk_ in the box and press _Connect_
+6.  The app will ask you for a _Portal address._ Enter _staff-vpn.royalholloway.ac.uk_ in the box and press _Connect_
 7.  You will be prompted to log in. You will need to use your university email address (username@live.rhul.ac.uk format, e.g. abcd123@live.rhul.ac.uk) to access the university’s virtual private network (VPN). Enter these details, and press _Sign In_
 8.  [Follow the instructions here to sign in with MFA.](https://intranet.royalholloway.ac.uk/students/help-support/it-services/multi-factor-authentication.aspx)
 
@@ -154,9 +154,9 @@ You can add this as a remote directory in your Dolphin places panel by right cli
 
 ![image](https://github.com/Weetile/weetile-compsci-rhul-resources/assets/7700383/d939d76c-e4e0-48fd-a716-f9236ae99a9d)
 
-## Installing Neovim on the Linux CIM Servers
+### Installing Neovim on the Linux CIM Servers
 
-### One-command install
+#### One-command install
 ```
 curl -sSL https://gist.github.com/Weetile/d208d9acae823ede5f2188a2695b3197/raw | sh
 ```
