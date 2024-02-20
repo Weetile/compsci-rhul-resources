@@ -48,6 +48,10 @@ You can easily create an SSH alias to make it **easier** and **more convenient**
 Host rhul  
     User zlac218  
     HostName linux.cim.rhul.ac.uk
+    # Uncomment the bottom two lines to set a custom shell
+    #RequestTTY force
+    #RemoteCommand /bin/zsh
+
 ```
 **That's it**! You can now  access the Linux server by just typing in `ssh rhul` ✨
 
@@ -132,13 +136,6 @@ Alternatively, you can learn `vim` for a lot more power and efficiency, but ther
 ### Change resolution and display settings on NoMachine
 
     xfce4-display-settings
-### Change default shell on the terminal
-On most Linux systems including the CIM servers, `bash` is used as the default shell. Normally you'd use the `chsh` command to do this, however this is locked down by CIM for security reasons.
-You can bypass this by modifying your `~/.profile` then relogging in. For example to change the default shell to `zsh`:
-```
-export SHELL=/bin/zsh  
-exec /bin/zsh -l
-```
 ### Adding new fonts on NoMachine
 To add new fonts, for example for use on Visual Studio Code or Eclipse, you'll need to add the font (.ttf or .otf) to your `~/.local/share/fonts` directory. You can use the `fc-cache` command to scan the font directories on the system and build font information cache files for applications using `fontconfig` for their font handling. Thus, run this command:
 ```
