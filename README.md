@@ -51,7 +51,6 @@ Host rhul
     # Uncomment the bottom two lines to set a custom shell
     #RequestTTY force
     #RemoteCommand /bin/zsh
-
 ```
 **That's it**! You can now  access the Linux server by just typing in `ssh rhul` ✨
 
