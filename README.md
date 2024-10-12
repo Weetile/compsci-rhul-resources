@@ -41,7 +41,7 @@ You can easily create an SSH alias to make it **easier** and **more convenient**
 👍🌟    By creating an SSH alias, you can omit the username and host address as such: 
 
     ssh rhul
-   To do this, you'll need to modify your ssh config. This can be found at `~/./ssh/config`.
+   To do this, you'll need to modify your ssh config. This can be found at `~/.ssh/config`.
    
    Make sure to **create the file if it doesn't exist**, then **append the following** to the file, replacing USERNAME with your RHUL username (e.g: ZLAT262 or similar)
 ```
