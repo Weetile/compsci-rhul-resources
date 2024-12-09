@@ -46,7 +46,7 @@ You can easily create an SSH alias to make it **easier** and **more convenient**
    Make sure to **create the file if it doesn't exist**, then **append the following** to the file, replacing USERNAME with your RHUL username (e.g: ZLAT262 or similar)
 ```
 Host rhul  
-    User zlac218  
+    User zabc123  
     HostName linux.cim.rhul.ac.uk
     # Uncomment the bottom two lines to set a custom shell
     #RequestTTY force
